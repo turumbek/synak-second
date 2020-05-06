@@ -639,6 +639,10 @@ img {
     font-weight: normal;
     margin: 0;
   }
+
+  .netkg {
+      float: right;
+  }
   
   @media (max-width: 767px) {
     .footer {
@@ -656,3 +660,143 @@ img {
       margin-left: 0;
     }
   }
+
+  /* Style the search field */
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #2f3e46;
+    border-radius: 10px 0 0 10px;
+    float: left;
+    width: 80%;
+    background: #ffffff;
+}
+  
+/* Style the submit button */
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #2f3e46;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #2f3e46;
+    border-radius: 0 8px 8px 0;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #039be5;
+}
+  
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+main {
+    display: grid; 
+    grid-template: 60px 1fr 1fr / repeat(4, 1fr);
+    margin: 0 auto; 
+    grid-gap: 10px;  
+    position: relative;
+    top: 100px;
+    width: 90%;
+    justify-content: space-around;
+    
+}
+
+
+.search {
+    grid-area: 1 / 2 / span 1 / span 2;
+}
+
+.box {
+    width: 220px;
+    height: 320px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #d2d2d2;
+    padding: 7px;
+
+}
+
+.a {
+    
+    grid-row: 2 / span 1; 
+    grid-column: 1 / span 1;
+}
+
+
+.b {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.c {
+    grid-row: 2 / span 1; 
+    grid-column: 3 / span 1; 
+}
+
+.d {
+    grid-row: 2 / span 1; 
+    grid-column: 4 / span 1; 
+}
+
+.e {
+    
+    grid-row: 3 / span 1; 
+    grid-column: 1 / span 1;
+}
+
+
+.f {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.g {
+    grid-row: 3 / span 1; 
+    grid-column: 3 / span 1; 
+}
+
+.h {
+    grid-row: 3 / span 1; 
+    grid-column: 4 / span 1; 
+}
+
+
+.box c {
+    width: 220px;
+    height: 320px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #d2d2d2;
+    padding: 7px;
+    
+}
+
+.box:hover {
+    border-color: #000;
+    cursor: pointer;
+}
+
+.box h3 {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 90%;
+    white-space: nowrap;
+    display : block;
+    text-align: center;
+    color: #3B393F;
+    font-size: 1rem;
+}
+
+.box h4 {
+      text-align: center;
+      color: #3B393F;
+      font-weight: 400;
+}
