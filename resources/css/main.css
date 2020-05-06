@@ -701,29 +701,44 @@ form.example::after {
 
 main {
     display: grid; 
-    grid-template: 60px 1fr 1fr / repeat(4, 1fr);
+    grid-template: 60px 1fr 1fr 60px / repeat(4, 1fr);
     margin: 0 auto; 
-    grid-gap: 10px;  
     position: relative;
     top: 100px;
     width: 90%;
-    justify-content: space-around;
+    justify-items: center;
+    grid-auto-flow: row;
+    grid-auto-columns: minmax(150px, 220px);
+    
     
 }
 
 
 .search {
     grid-area: 1 / 2 / span 1 / span 2;
+    justify-self: normal;
 }
 
-.box {
+.grid {
     width: 220px;
-    height: 320px;
+    height: 250px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
     border: 1px solid #d2d2d2;
     padding: 7px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 8px; 
+    
 
 }
+
+.grid img  {
+    margin: 0 auto;
+    width: 70%;
+    
+ }
+
 
 .a {
     
@@ -770,7 +785,7 @@ main {
 }
 
 
-.box c {
+.grid c {
     width: 220px;
     height: 320px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
@@ -779,23 +794,21 @@ main {
     
 }
 
-.box:hover {
-    border-color: #000;
+.grid:hover {
+    border-color: #2f3e46;
     cursor: pointer;
 }
 
-.box h3 {
+.grid h3 {
     overflow: hidden; 
-    text-overflow: ellipsis; 
-    width: 90%;
-    white-space: nowrap;
     display : block;
     text-align: center;
-    color: #3B393F;
+    color: #2f3e46;
     font-size: 1rem;
+    padding-top: 0;
 }
 
-.box h4 {
+.grid a {
       text-align: center;
       color: #3B393F;
       font-weight: 400;
