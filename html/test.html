@@ -3,29 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сынак-Тесты</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Font style goes here-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,400i,600,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat:300i,400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,600,700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,600i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap styles slider-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="../resources/css/animate.min.css" rel="stylesheet">
+    <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../resources/css/bootstrap.css" rel="stylesheet">
+    <!-- My styles goes here-->
+    <link href="../resources/css/main.css" rel="stylesheet" type="text/css">
+    <!-- Fontawersom icons-->
+    <script src="https://kit.fontawesome.com/88ade2f78e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../resources/images/faviconlogo.ico"/>
+    <!--linked searchbar style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Сынак - универститеты Бишкека</title>
 </head>
 <body>
     <!-- Navigation Section -->
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
+    <header>
+        <img src="../resources/images/Webp.net-resizeimage.png" class="logo" alt="logo"/>
+        <a href="../index.html" class="logo-link">
+        <h1 class="logo-title">Сынак</h1>
+        </a>
+        <div class="container-search">
+          <div class="search-bar">
+            <input type="text" class="search-bar__input" placeholder="Найти..." aria-label="search"/>
+            <button class="search-bar__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="#about">О Нас</a></li>
+                <li><a href="test.html">Тесты</a></li>
+                <li><a href="#" class="active">ВУЗы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
         </label>
-        <label class="logo">Сынак<span class="lobster">!</span></label>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a class="active" href="#test">Тесты</a></li>
-          <li><a href="#">ВУЗы</a></li>
-          <li><a href="#">Инфо</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
+    </header>
     <main>
         <div class="progres">
         
@@ -80,72 +108,87 @@
                 </div>
                 </a>
             </div>
-            <div class="next">
-                <div class="skip">
-                    <a href="#"><h2>Пропустить</h2></a>
-                </div>
-                <div class="continue">
-                    <a href="#"><h2>Далее</h2></a>
-                </div>
-                
+        </div>
+        <div class="next">
+            <div class="skip">
+                <a href="#"><h2>Пропустить</h2></a>
             </div>
+            <div class="cont">
+                <a href="#"><h2>Далее</h2></a>
+            </div>
+            
         </div>
 
     </main>
-    <footer>
-        <div class="container_footer">
-            
-            <a href="https://play.google.com/store/apps/details?id=com.asannov.synak" target="_blank">
-                <div class="download">
-                    <div class="downtext">
-                    <h4>Готовься к экзаменам на ходу! Скачай приложение <strong>Synak</strong> на свой мобильный!</h4>
-                    </div>
-                    <div class=downloadtable>
-                    <embed src="resources/images/google-play-store-icon-png-14.png"/>
-                    </div>
-                </div>
-            </a>
-
-            <div class="netkg">
-                <!-- WWW.NET.KG , code for http://synak.kg -->
-                <script language="javascript" type="text/javascript">
-                    java="1.0";
-                    java1=""+"refer="+escape(document.referrer)+"&amp;page="+escape(window.location.href);
-                    document.cookie="astratop=1; path=/";
-                    java1+="&amp;c="+(document.cookie?"yes":"now");
-                </script>
-                <script language="javascript1.1" type="text/javascript">
-                    java="1.1";
-                    java1+="&amp;java="+(navigator.javaEnabled()?"yes":"now");
-                </script>
-                <script language="javascript1.2" type="text/javascript">
-                    java="1.2";
-                    java1+="&amp;razresh="+screen.width+'x'+screen.height+"&amp;cvet="+
-                    (((navigator.appName.substring(0,3)=="Mic"))?
-                    screen.colorDepth:screen.pixelDepth);
-                </script>
-                <script language="javascript1.3" type="text/javascript">java="1.3"</script>
-                <script language="javascript" type="text/javascript">
-                    java1+="&amp;jscript="+java+"&amp;rand="+Math.random();
-                    document.write("<a href='http://www.net.kg/stat.php?id=6663&amp;fromsite=6663' target='_blank'>"+
-                    "<img src='http://www.net.kg/img.php?id=6663&amp;"+java1+
-                    "' border='0' alt='WWW.NET.KG' width='88' height='31' /></a>");
-                </script>
-                <noscript>
-                    <a href='http://www.net.kg/stat.php?id=6663&amp;fromsite=6663' target='_blank'><img
-                    src="http://www.net.kg/img.php?id=6663" border='0' alt='WWW.NET.KG' width='88'
-                    height='31' /></a>
-                </noscript>
-                <!-- /WWW.NET.KG -->
-            </div>
-            
-
-            <div class="trademark">
-                <h4>© Developed with <span class="love" role="img">️❤️</span>in Bishkek</h4>
-            </div>
-
+    <footer class="footer" id="contact">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about" id="about">
+            <span>О проекте Сынак</span> Образовательный портал «Сынак» — благотворительный проект разработчиков-энтузиастов. Он развивается молодыми разработчиками, заботящимися об образовании детей Кыргызстана, будущих абитуриенов. Никем не финансируется.
+            <br> Все тестовые материалы собраны с открытых источников в сети Интернет. 
+          </p>
+          <div class="icons">
+            <a href="https://play.google.com/store/apps/details?id=com.asannov.synak" target="_blank"><img src="../resources/images/playstore.png" alt="playstore"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.asannov.synak" target="_blank"><img src="../resources/images/apple.png" alt="applestore" ></a>
+          </div>
         </div>
-    </footer>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span>Бишкек, Кыргызская Республика</span> </p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p> (+996 312) 123 456</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> contact@synak.kg</a></p>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+          <h2><span></span></h2>
+          <p class="menu">
+            <a href="#"> Главная</a> |
+            <a href="#"> О нас</a> |
+            <a href="#"> Тесты</a> |
+            <a href="#"> ВУЗы</a> |
+            <a href="#"> Контакты</a>
+          </p>
+          <p class="name"> Bevolute Labs &copy; 2020</p>
+        </div>
+        <div class="netkg">      
+            <!--WWW.NET.KG , code for http://synak.kg-->
+            
+            <script language="javascript" type="text/javascript">
+                java="1.0";
+                java1=""+"refer="+escape(document.referrer)+"&amp;page="+escape(window.location.href);
+                document.cookie="astratop=1; path=/";
+                java1+="&amp;c="+(document.cookie?"yes":"now");
+            </script>
+            <script language="javascript1.1" type="text/javascript">
+                java="1.1";
+                java1+="&amp;java="+(navigator.javaEnabled()?"yes":"now");
+            </script>
+            <script language="javascript1.2" type="text/javascript">
+                java="1.2";
+                java1+="&amp;razresh="+screen.width+'x'+screen.height+"&amp;cvet="+
+                (((navigator.appName.substring(0,3)=="Mic"))?
+                screen.colorDepth:screen.pixelDepth);
+            </script>
+            <script language="javascript1.3" type="text/javascript">java="1.3"</script>
+            <script language="javascript" type="text/javascript">
+                java1+="&amp;jscript="+java+"&amp;rand="+Math.random();
+                document.write("<a href='http://www.net.kg/stat.php?id=6663&amp;fromsite=6663' target='_blank'>"+
+                "<img src='http://www.net.kg/img.php?id=6663&amp;"+java1+
+                "' border='0' alt='WWW.NET.KG' width='88' height='31' /></a>");
+            </script>
+            <noscript>
+                <a href='http://www.net.kg/stat.php?id=6663&amp;fromsite=6663' target='_blank'><img
+                src="http://www.net.kg/img.php?id=6663" border='0' alt='WWW.NET.KG' width='88'
+                height='31' /></a>
+            </noscript>
+        </div>
+    </footer> 
     
 </body>
 </html>

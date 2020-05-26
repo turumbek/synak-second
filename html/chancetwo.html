@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--Font style goes here-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,400i,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat:300i,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300i,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,600i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap styles slider-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="../resources/css/animate.min.css" rel="stylesheet">
+    <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../resources/css/bootstrap.css" rel="stylesheet">
+    <!-- My styles goes here-->
+    <link href="../resources/css/main.css" rel="stylesheet" type="text/css">
+    <!-- Fontawersom icons-->
+    <script src="https://kit.fontawesome.com/88ade2f78e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../resources/images/faviconlogo.ico" />
+    <!--linked searchbar style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Сынак - универститеты Бишкека</title>
+</head>
+<body>                
+     <!--Header logo and navigation code go here-->
+     <header>
+        <img src="../resources/images/Webp.net-resizeimage.png" class="logo" alt="logo"/>
+        <a href="../index.html" class="logo-link">
+        <h1 class="logo-title">Сынак</h1>
+        </a>
+        <div class="container-search">
+          <div class="search-bar">
+            <input type="text" class="search-bar__input" placeholder="Найти..." aria-label="search"/>
+            <button class="search-bar__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="#about">О Нас</a></li>
+                <li><a href="test.html">Тесты</a></li>
+                <li><a href="#search" class="active">ВУЗы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+      <div class="container-searchmain" id="search">
+        <div class="search-bar">
+          <input type="text" class="search-bar__input" placeholder="Найти..." aria-label="search"/>
+          <button class="search-bar__submit" aria-label="submit search"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="container-main">
+        <!-- Universities contacts card -->
+        <div class="card card-default" id="card_contacts">
+            <div id="contacts" class="panel-collapse collapse show" aria-expanded="true">
+                <ul class="list-group pull-down" id="contact-list">
+                    <li class="list-group-item">
+                        <div class="row w-100">
+                            <div class="col-12 col-sm-6 col-md-3 px-0">
+                                <img src="../resources/images/univery/rsz_1ataturk.png" alt="Ata-Turk" class="rounded-circle mx-auto d-block img-fluid">
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                                
+                                <label class="name lead">Международный университет Ала-Tоо</label>
+                                <br> 
+                                <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="ул.Анкара 1/8, Тунгуч, 720048, Бишкек, Кыргызстан"></span>
+                                <span class="text-muted">ул.Анкара 1/8, Тунгуч, 720048, Бишкек, Кыргызстан</span>
+                                <br>
+                                <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(870) 288-4149"></span>
+                                <span class="text-muted small">+996 (312) 631425 </span>
+                                <br>
+                                <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" data-original-title="" title=""></span>
+                                <span class="text-muted small text-truncate">www.iaau.edu.kg</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row w-100">
+                            <div class="col-12 col-sm-6 col-md-3 px-0">
+                                <img src="../resources/images/univery/rsz_download_1.png" alt="AUCA" class="img-fluid rounded-circle d-block mx-auto">
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                                <span class="name lead">Американский университет в Центральной Азии</span>
+                                <br>
+                                <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="7396 E North St"></span>
+                                <span class="text-muted">7/6, Аалы Токомбаев, Бишкек, Кыргызстан</span>
+                                <br>
+                                <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(560) 180-4143"></span>
+                                <span class="text-muted small">+996 (312) 915019</span>
+                                <br>
+                                <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.auca.kg"></span>
+                                <span class="text-muted small text-truncate">
+                                  <a href="https://www.auca.kg/">www.auca.kg</a></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/krsu.png" alt=" KRSU" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызско-Российский Славянский университет
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="720000, г. Бишкек, ул. Киевская, 44 "></span>
+                            <span class="text-muted">720000, г. Бишкек, ул. Киевская, 44 </span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(560) 180-4143"></span>
+                            <span class="text-muted small">+996 (312) 66-25-67, 43-11-69</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.auca.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="https://krsu.edu.kg/">www.krsu.edu.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/rsz_kgtu.png" alt="KGTU" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызский государственный технический университет им. И. Раззакова
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="720024, г. Бишкек, пр. Мира, 92"></span>
+                            <span class="text-muted">720024, г. Бишкек, пр. Мира, 92</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(560) 180-4143"></span>
+                            <span class="text-muted small">+996 (312) 54 51 25</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.kstu.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="https://kstu.kg/">www.kstu.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/rsz_manas.png" alt="Manas" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызско-Турецкий университет «Манас»
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">Бишкек, Проспект Чынгыза Айтматова 56</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 54 19 41-47</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.intl.manas.edu.kg/ru"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://intl.manas.edu.kg/ru">www.intl.manas.edu.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/rsz_knu.png" alt="KGNU" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызский национальный университет им. Ж. Баласагына 
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720024, г. Бишкек, ул. Манаса, 101</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 32 33 94</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.knu.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="https://www.knu.kg/">www.knu.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/no-image.jpg" alt="KGNU" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызский Государственный Университет им. И.Арабаева  
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720000, г. Бишкек, пр. Эркиндик, 38</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 66 03 47</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://www.arabaev.kg/">www.arabaev.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/kgusta.png" alt="KGNU" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызский государственный университет строительства, транспорта и архитектуры им.Н.Исанова  
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720000, г. Бишкек, ул. Малдыбаева, 34б</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 54 35 61</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="https://ksucta.kg/ru/">wwww.ksucta.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/bgu.png" alt="KGNU" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Бишкекский Гуманитарный Университет
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">г. Бишкек, 720044, проспект Чингиза Айтматова, 27</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 21-86-59</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="https://www.bhu.kg/">www.bhu.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/fizakademiya.png" alt="Fizakademiya" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызская государственная академия физической культуры и спорта
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720064, г. Бишкек, ул. Ахунбаева, 97</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 57 04 89</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://ksapcs.kg/">www.ksapcs.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/kgma_logo.png" alt="Fizakademiya" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызская Государственная Медицинская Академия
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720020, г. Бишкек, ул. Ахунбаева, 92</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 54 58 81</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="https://www.kgma.kg/">www.kgma.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/kgua.png" alt="KGUA" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызская Государственная Юридическая Академия
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720020, г. Бишкек, пр. Чуй 180А</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 392 010</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="https://www.ksla.kg/ru/">www.ksla.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/muk.png" alt="KGUA" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Международный университет Кыргызстана
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720071, г. Бишкек, пр. Чуй, 255</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 31 04 71</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://www.iuk.kg/">www.iuk.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/no-image.jpg" alt="KNAU" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Кыргызский Национальный Аграрный Университет
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720005, г. Бишкек, ул. Медерова, 68</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 54-52-10</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://knau.kg/">www.knau.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/artacademy.png" alt="KGUA" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Национальная Академия Художеств Кыргызской Республики
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720027, г.Бишкек, ул.Циолковского,98;</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 21-16-97</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://academyart.kg/index.php">www.academyart.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/aupkr.png" alt="AUPKR" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Академия Государственного Управления при Президенте Кыргызской Республики
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720020, Бишкек, ул. Панфилова 23</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 62 31 00</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://www.apap.kg/">www.apap.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/tourism2.png" alt="AUPKR" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Академия Туризма
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">720022, г. Бишкек, пр. Чуй, 99</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 360-320</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://at.edu.kg/">www.at.edu.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/no-image.jpg" alt="osce-academy" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Академия ОБСЕ в Бишкеке
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">Бишкек, Переулок Ботанический, 1А</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 54-12-00</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://www.osce-academy.net/ru/" target="_blank">www.osce-academy.net</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/no-image.jpg" alt="AUPKR" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Академия МВД Кыргызской Республики
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">Бишкек, ул. Ч.Валиханова  1А (ст. Чолпон-Атинская)</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (312) 63-08-89</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://academy-mvd.kg/">www.academy-mvd.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <img src="../resources/images/univery/innovation.png" alt="AUPKR" class="img-fluid rounded-circle d-block mx-auto">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="name lead">
+                              Международный университет инновационных технологий
+                              </span>
+                            <br>
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="Бишкек, Проспект Чынгыза Айтматова 56"></span>
+                            <span class="text-muted">г. Бишкек, ул. Горького, 1/17</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="54 19 41-47"></span>
+                            <span class="text-muted small">+996 (556) 74 45 13</span>
+                            <br>
+                            <span class="fa fa-globe fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="www.arabaev.kg"></span>
+                            <span class="text-muted small text-truncate">
+                              <a href="http://www.intuit.kg/">www.intuit.kg</a></span>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+                <!--/contacts list-->
+            </div>
+        </div>
+    </div>
+  <footer class="footer" id="contact">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about" id="about">
+            <span>О проекте Сынак</span> Образовательный портал «Сынак» — благотворительный проект разработчиков-энтузиастов. Он развивается молодыми разработчиками, заботящимися об образовании детей Кыргызстана, будущих абитуриенов. Никем не финансируется.
+            <br> Все тестовые материалы собраны с открытых источников в сети Интернет. 
+          </p>
+          <div class="icons">
+            <a href="https://play.google.com/store/apps/details?id=com.asannov.synak" target="_blank"><img src="../resources/images/playstore.png" alt="playstore"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.asannov.synak" target="_blank"><img src="../resources/images/apple.png" alt="applestore" ></a>
+          </div>
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span>Бишкек, Кыргызская Республика</span> </p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p> (+996 312) 123 456</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> contact@synak.kg</a></p>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+          <h2><span></span></h2>
+          <p class="menu">
+            <a href="../index.html"> Главная</a> |
+            <a href="#about"> О нас</a> |
+            <a href="#"> Тесты</a> |
+            <a href="#search"> ВУЗы</a> |
+            <a href="#contact"> Контакты</a>
+          </p>
+          <p class="name"> Bevolute Labs &copy; 2020</p>
+        </div>
+        <div class="netkg">      
+            <!--WWW.NET.KG , code for http://synak.kg-->
+            
+            <script language="javascript" type="text/javascript">
+                java="1.0";
+                java1=""+"refer="+escape(document.referrer)+"&amp;page="+escape(window.location.href);
+                document.cookie="astratop=1; path=/";
+                java1+="&amp;c="+(document.cookie?"yes":"now");
+            </script>
+            <script language="javascript1.1" type="text/javascript">
+                java="1.1";
+                java1+="&amp;java="+(navigator.javaEnabled()?"yes":"now");
+            </script>
+            <script language="javascript1.2" type="text/javascript">
+                java="1.2";
+                java1+="&amp;razresh="+screen.width+'x'+screen.height+"&amp;cvet="+
+                (((navigator.appName.substring(0,3)=="Mic"))?
+                screen.colorDepth:screen.pixelDepth);
+            </script>
+            <script language="javascript1.3" type="text/javascript">java="1.3"</script>
+            <script language="javascript" type="text/javascript">
+                java1+="&amp;jscript="+java+"&amp;rand="+Math.random();
+                document.write("<a href='http://www.net.kg/stat.php?id=6663&amp;fromsite=6663' target='_blank'>"+
+                "<img src='http://www.net.kg/img.php?id=6663&amp;"+java1+
+                "' border='0' alt='WWW.NET.KG' width='88' height='31' /></a>");
+            </script>
+            <noscript>
+                <a href='http://www.net.kg/stat.php?id=6663&amp;fromsite=6663' target='_blank'><img
+                src="http://www.net.kg/img.php?id=6663" border='0' alt='WWW.NET.KG' width='88'
+                height='31' /></a>
+            </noscript>
+        </div>
+  </footer>  
+    
+</body>
+</html>
