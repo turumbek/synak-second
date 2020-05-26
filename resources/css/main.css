@@ -160,6 +160,7 @@ nav a:hover,
 
     
 .container-searchmain {
+        visibility: visible;
         position: relative;
         background-color: transparent;
         width: 60vw;
@@ -840,6 +841,10 @@ form.example::after {
 
 /* Animated search goes here */
 
+.container-searchmain {
+    visibility: hidden;
+}
+
 .container-search {
    position: relative;
    background-color: transparent;
@@ -924,6 +929,11 @@ form.example::after {
 .list-group-item {
     box-shadow: 0px 0px 60px -14px rgba(0,0,0,0.11) !important;
     font-family: "Roboto", sans-serif;
+   
+}
+
+.row {
+    margin: 0 auto !important;
 }
 
 .media {
@@ -1151,7 +1161,7 @@ a .option:visited {
 .cont h2 {
     color: #fff;
     text-decoration: none;
-    
+    margin: 0;
 }
 
 
@@ -1298,6 +1308,7 @@ a .option:visited {
 .finish h2 {
     color: #fff;
     font-size: 1rem;
+    margin: 0;
 }
 
 .finish:hover {
