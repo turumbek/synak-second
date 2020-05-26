@@ -929,11 +929,10 @@ form.example::after {
 .list-group-item {
     box-shadow: 0px 0px 60px -14px rgba(0,0,0,0.11) !important;
     font-family: "Roboto", sans-serif;
-   
 }
 
-.row {
-    margin: 0 auto !important;
+.list-group-item .row {
+    margin: 0 auto;
 }
 
 .media {
@@ -951,7 +950,6 @@ form.example::after {
     flex-shrink: 3;
     display: flex;
     flex-direction: column;
-    
 }
 
 .media-body p {
