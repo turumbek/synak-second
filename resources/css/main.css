@@ -124,8 +124,9 @@ nav a:hover,
 
     header {
         display: grid; 
-        grid-template-columns: 1fr auto auto minmax(600px, 5fr) 1fr;
+        grid-template-columns: 1fr 60px auto minmax(600px, 5fr) 1fr;
         align-items: center;
+        
     }
 
     .logo {
