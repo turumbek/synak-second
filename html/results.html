@@ -25,6 +25,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="../resources/images/faviconlogo.ico"/>
     <!--linked searchbar style-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--JS-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/result.js"></script> 
+
     <title>Сынак - универститеты Бишкека</title>
 </head>
 <header>
@@ -57,10 +62,10 @@
             <h5>Ваш результат!</h5>
             <div class="summary">
                 
-                <h2>Правильно 7 из 15</h2>         
+                <h2 id="summary_label">Правильно 7 из 15</h2>         
             <div class="results_summ">
                 <ul>
-                    <a id="true" href="#"><li>1</li></a>
+                    <!--a id="true" href="#"><li>1</li></a>
                     <a id="true" href="#"><li>2</li></a>
                     <a id="false" href="#modal"><li>3</li></a>
                     <a id="false" href="#modal"><li>4</li></a>
@@ -74,7 +79,7 @@
                     <a id="true" href="#"><li>12</li></a>
                     <a id="true" href="#"><li>13</li></a>
                     <a id="false" href="#modal"><li>14</li></a>
-                    <a id="true" href="#"><li>15</li></a>
+                    <a id="true" href="#"><li>15</li></a-->
                 </ul> 
             </div>
             
@@ -104,27 +109,27 @@
                             <h5>Ваш ответ</h5>
                             <div class="answer">
                                 
-                                    <div class="option">
+                                    <div class="option" id="option_a">
                                     <div class="option_element">
                                         <h2>a</h2>
                                     </div>
-                                    <p>Сутки: Месяц</p>
+                                    <p></p>
                                     </div>
                                 
                                 
-                                <div class="option">
+                                <div class="option" id="option_b">
                                     <div class="option_element"><h2>б</h2></div>
-                                    <p>Неделя: Понедельник</p>
+                                    <p></p>
                                 </div>
                                 
-                                <div class="option" id="false">
+                                <div class="option" id="option_c">
                                     <div class="option_element"><h2>в</h2></div>
-                                    <p>Дорога: Тропанварь: </p>
+                                    <p></p>
                                 </div>
                                 
-                                <div class="option">
+                                <div class="option" id="option_d">
                                     <div class="option_element"><h2>г</h2></div>
-                                    <p>Январь: Месяц</p>
+                                    <p></p>
                                 </div>
                                 
                             </div>
@@ -133,7 +138,7 @@
                         <div class="modal_container">
                             <h5>Правильный ответ</h5>
                             <h2>Решение</h2>
-                            <h4>Loren ipsum </h4>
+                            <h4 id="explanation"></h4>
                             
                         </div>
                     </div>

@@ -57,54 +57,38 @@
     <main>
         <div class="progres">
         
-            <ul class="progressbar">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>                
-            </ul>
+            <ul class="progressbar" id="progress_bar"></ul>
         </div>
         <div class="quiz">
             <div class="question">
                 <h5>Основной тест</h5>
-                <h4>Определите какие отношения существуют между словами в этой паре, а затем выберите в вариантах ответа пару слов с такими же отношениями. Порядок слов в выбранном вами ответе должен быть таким же, как и в образце</h4>
+                <h4 id="question">Загрузка...</h4>
             </div>
             <div class="answer">
-                <a class="active" href="#">
+                <a id="option_a" class="active" href="#">
                     <div class="option">
                     <div class="option_element">
                         <h2>a</h2>
                     </div>
-                    <p>Сутки: Месяц</p>
+                    <p></p>
                     </div>
                 </a>
-                <a class="active" href="#">
+                <a id="option_b" class="active" href="#">
                 <div class="option">
                     <div class="option_element"><h2>б</h2></div>
-                    <p>Неделя: Понедельник</p>
+                    <p></p>
                 </div>
                 </a>
-                <a class="active" href="#">
+                <a id="option_c" class="active" href="#">
                 <div class="option">
                     <div class="option_element"><h2>в</h2></div>
-                    <p>Дорога: Тропанварь: МесяцЯнварь: МесяцЯнварь: МесяцЯнварь: МесяцЯнварь: МесяцЯнварь: МесяцДорога: Тропанварь: МесяцЯнварь: МесяцЯнварь: МесяцЯнварь: МесяцЯнварь: Месяц Январь: Месяц</p>
+                    <p></p>
                 </div>
                 </a>
-                <a class="active" href="#">
+                <a id="option_d" class="active" href="#">
                 <div class="option">
                     <div class="option_element"><h2>г</h2></div>
-                    <p>Январь: МесяцЯнварь: МесяцЯнварь: МесяцЯнварь: МесяцЯнварь: МесяцЯнварь: Месяц</p>
+                    <p></p>
                 </div>
                 </a>
             </div>
@@ -113,7 +97,7 @@
             <div class="skip">
                 <a href="#"><h2>Пропустить</h2></a>
             </div>
-            <div class="cont">
+            <div class="cont" id="btn_next">
                 <a href="#"><h2>Далее</h2></a>
             </div>
             
@@ -190,5 +174,7 @@
         </div>
     </footer> 
     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/app.js"></script> 
 </body>
 </html>
